@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.content {
+  border: 1px solid rgb(0, 225, 255, 0.904);
+  width: 500px;
+  height: 0px;
+  transition: 200px 2s;
+  overflow: hidden;
+}
+.show {
+  min-height: 0px;
+  max-height: 100px;
+}
+#accordion {
+  display: block;
+  list-style: none;
+}
+
+button {
+  border: 1px solid rgb(0, 225, 255, 0.904);
+  background: rgb(0, 225, 255, 0.904);
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 20px;
+  width: 500px;
+}
+
+.accordion {
+  background: rgba(0, 225, 255, 0.904);
+  width: 500px;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 20px;
+  min-height: 0px;
+  max-height: 100px;
+  transition: 100px 2s;
+}
+
+button:focus {
+  outline: none;
+}
